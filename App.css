@@ -551,3 +551,33 @@ h2 {
 .facebook  { color: #1877f2 !important; }
 .linkedin  { color: #0a66c2 !important; }
 .github    { color: #fff !important; }
+
+@media screen and (max-width: 768px) {
+  /* 1. تصغير العرض والهوامش العامة */
+  .container, .portfolio-container, .hero {
+    padding: 10px !important;
+    width: 100% !important;
+  }
+
+  /* 2. تحويل الـ Navbar (القائمة) لتكون عمودية بدل أفقية */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* 3. جعل عناصر الـ Grid تعرض عنصر واحد في السطر بدل عدة أعمدة */
+  .skills-grid, .project-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 4. تصغير العناوين والنصوص الكبيرة لتتناسب مع شاشة الموبايل */
+  .hero h1 {
+    font-size: 28px !important;
+  }
+}
