@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import hero from './assets/55.jpeg';
 import { FaInstagram, FaWhatsapp, FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: '/Portfolio/',
-})
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
