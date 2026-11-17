@@ -22,4 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 *Copy*
+=======
+>>>>>>> d3d9ec442027bf425c560fa5e021253836e7887c
